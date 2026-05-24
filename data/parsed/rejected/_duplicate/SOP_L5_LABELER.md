@@ -1,0 +1,36 @@
+---
+schema_version: 1
+tenant_id: "00000000-0000-0000-0000-000000000001"
+source: other
+origin:
+  filename: "SOP_L5_LABELER.md"
+  uploaded_at: "2026-05-23T12:00:00Z"
+  uploaded_by: "11111111-1111-1111-1111-111111111111"
+  mime_type: "text/markdown"
+tags: [oee, packaging, labeler, sop]
+doc_type: SOP
+fault_code: L5
+machine_id: LABELER_03
+category: MECHANICAL
+equipment_type: LABELER_MACHINE
+severity: MEDIUM
+avg_downtime_min: 10.0
+last_updated: "2026-05-15"
+---
+
+# SOP Xử lý sự cố L5 - Đứt nhãn hoặc Kẹt lu lô bôi keo dán nhãn
+
+## 1. Quy trình xử lý tiêu chuẩn (Standard Operations)
+Khi máy dán nhãn LABELER_03 báo lỗi L5, nhân viên vận hành thực hiện theo trình tự an toàn sau:
+1. Nhấn nút "Stop" trên bảng điều khiển HMI, đợi cơ cấu truyền động dừng hẳn. **Không thọc tay vào khi lu lô còn quay.**
+2. Kiểm tra trạng thái cuộn nhãn. Nếu đứt nhãn dán, kéo đoạn đầu nhãn luồn qua hệ thống dẫn hướng căng phanh theo đúng sơ đồ dán nhãn dán ở vách máy.
+3. Nếu lu lô keo nóng bị kẹt keo khô:
+   - Đảm bảo nhiệt độ bể keo hiển thị đạt trên 160 độ C. Nếu dưới 140 độ C, tuyệt đối không cố quay cơ cấu để tránh xoắn trục.
+   - Sử dụng dụng cụ gạt chuyên dụng để cạo bỏ lớp keo thừa bám khô trên mép lô và dao gạt keo.
+4. Đóng cửa mica bảo vệ, nhấn "Reset Error" trên HMI và chạy thử ở chế độ Manual kiểm tra nhãn dán.
+
+## 2. Tiêu chí leo thang (Escalation Path)
+* **Escalate sang Tổ Bảo trì:** 
+  - Đã làm sạch keo và luồn nhãn nhưng nhãn dán bị lệch mép dán (lệch > 2mm) liên tục trên 5 chai liên tiếp.
+  - Bộ sưởi bể keo nóng (heater elements) không tăng nhiệt độ sau 15 phút khởi động lại.
+  - Thời gian xử lý thủ công vượt quá **15 phút**, báo cáo ngay cho Tổ trưởng ca sản xuất để ghi chép downtime OEE.

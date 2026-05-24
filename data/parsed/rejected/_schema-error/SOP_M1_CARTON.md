@@ -1,0 +1,33 @@
+---
+schema_version: 1
+tenant_id: "00000000-0000-0000-0000-000000000001"
+source: other
+origin:
+  filename: "SOP_M1_CARTON.md"
+  uploaded_at: "2026-05-23T00:00:00Z"
+  uploaded_by: "11111111-1111-1111-1111-111111111111"
+  mime_type: "text/markdown"
+tags: [oee, mechanical, carton_machine, sop]
+doc_type: SOP
+fault_code: M1
+machine_id: CARTON_01
+category: MECHANICAL
+equipment_type: CARTON_MACHINE
+severity: LOW
+avg_downtime_min: 5.0
+last_updated: "2026-05-01"
+---
+
+# SOP Xử lý sự cố M1 - Kẹt cơ cấu cấp vỏ hộp Carton
+
+## 1. Quy trình xử lý tiêu chuẩn (Standard Operations)
+Khi máy đóng hộp Carton báo lỗi M1, nhân viên vận hành thực hiện theo các bước sau:
+1. Nhấn nút dừng khẩn cấp (E-Stop) để ngắt động cơ Servo cấp hộp.
+2. Mở nắp chụp an toàn khu vực khoang chứa hộp (Magazine).
+3. Loại bỏ các vỏ hộp bị rách, cong vênh hoặc ẩm mốc gây kẹt ở con lăn kéo.
+4. Đóng nắp an toàn, nhả E-Stop và nhấn nút "Reset Fault" trên màn hình HMI.
+5. Chạy máy ở chế độ Jog (chạy chậm) để kiểm tra 3 chu kỳ đầu tiên.
+
+## 2. Tiêu chí leo thang (Escalation Path)
+* **Yêu cầu Bảo trì (Đã khóa máy):** Áp dụng khi đã gỡ hết hộp kẹt nhưng hệ thống hút chân không (Vacuum cups) không gắp được hộp, hoặc phát hiện dây curoa băng tải bị đứt/trượt.
+* **Hoàn tất (Resolved):** Máy chạy mượt mà qua 3 chu kỳ thử, vận hành chuyển sang chế độ Auto.
