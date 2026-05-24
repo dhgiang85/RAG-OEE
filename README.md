@@ -1,6 +1,6 @@
 # Hướng dẫn Triển Khai Hệ Thống (Docker Deployment Guide)
 
-Tài liệu này hướng dẫn chi tiết cách triển khai (deploy) hệ thống RAG v3 sang một máy chủ mới hoàn toàn.
+Tài liệu này hướng dẫn chi tiết cách triển khai (deploy) hệ thống RAG cho OEE.
 
 ---
 
