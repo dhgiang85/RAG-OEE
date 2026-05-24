@@ -1,13 +1,16 @@
 ---
 schema_version: 1
-tenant_id: "00000000-0000-0000-0000-000000000001"
+tenant_id: 00000000-0000-0000-0000-000000000001
 source: other
 origin:
-  filename: "SOP_M1_CARTON.md"
-  uploaded_at: "2026-05-23T00:00:00Z"
-  uploaded_by: "11111111-1111-1111-1111-111111111111"
-  mime_type: "text/markdown"
-tags: [oee, mechanical, carton_machine, sop]
+  filename: SOP_M1_CARTON.md
+  uploaded_at: '2026-05-23T00:00:00Z'
+  uploaded_by: 11111111-1111-1111-1111-111111111111
+tags:
+- oee
+- mechanical
+- carton_machine
+- sop
 doc_type: SOP
 fault_code: M1
 machine_id: CARTON_01
@@ -15,8 +18,9 @@ category: MECHANICAL
 equipment_type: CARTON_MACHINE
 severity: LOW
 avg_downtime_min: 5.0
-last_updated: "2026-05-01"
+last_updated: '2026-05-01'
 ---
+
 
 # SOP Xử lý sự cố M1 - Kẹt cơ cấu cấp vỏ hộp Carton
 

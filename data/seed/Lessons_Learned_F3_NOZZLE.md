@@ -1,0 +1,38 @@
+---
+schema_version: 1
+tenant_id: 00000000-0000-0000-0000-000000000001
+source: other
+origin:
+  filename: Lessons_Learned_F3_NOZZLE.md
+  uploaded_at: '2026-05-23T12:15:00Z'
+  uploaded_by: 11111111-1111-1111-1111-111111111111
+tags:
+- oee
+- filling
+- liquid
+- nozzle
+- lessons_learned
+- food_safety
+doc_type: LESSON_LEARNED
+fault_code: F3
+machine_id: FILLER_02
+incident_date: '2026-05-18'
+---
+
+
+# Bài Học Kinh Nghiệm: Tắc nghẽn hàng loạt vòi chiết rót siro máy FILLER_02
+
+## 1. Mô tả sự cố & Dấu hiệu cảnh báo
+Trong ca sản xuất ngày 18/05/2026, 4 vòi chiết rót số 2, 5, 8 và 12 của máy FILLER_02 bị lỗi nhỏ giọt và chiết thiếu thể tích nghiêm trọng, hệ thống cân khối lượng loại bỏ liên tục sản phẩm lỗi. Tổng thời gian dừng máy khắc phục và làm sạch đạt **65 phút**.
+
+## 2. Phân tích Nguyên nhân (Root Cause)
+Do siro si-rô dược phẩm đặc có hàm lượng đường cao (độ nhớt lớn) được lưu trữ qua đêm trong đường ống dẫn cấp ở nhiệt độ phòng thấp (dưới 20 độ C) mà không được bảo ôn nhiệt độ. Siro bị kết tinh đường cục bộ tạo các hạt tinh thể đường nhỏ. Khi bắt đầu chạy máy, các hạt đường này di chuyển đến đầu vòi chiết và làm kẹt chặt đĩa phân phối lò xo làm kín của vòi chiết rót, ngăn vòi đóng kín hoàn toàn.
+
+## 3. Cách khắc phục & Phòng ngừa (Resolution & Preventive)
+* **Biện pháp xử lý lập tức:**
+  1. Dừng máy chiết, cách ly lô sản phẩm lỗi để kiểm tra chất lượng.
+  2. Tiến hành súc rửa cưỡng bức hệ thống chiết bằng nước nóng tinh khiết CIP đạt 80 độ C trong 15 phút để hòa tan hoàn toàn đường kết tinh kẹt trong vòi.
+  3. Tháo gỡ các gioăng cao su chữ O (O-ring) bị biến dạng do kẹt hạt đường cứng và thay thế gioăng silicon y tế mới.
+* **Biện pháp phòng ngừa lâu dài:**
+  - Quy định bắt buộc: Trước mỗi ca chạy sản phẩm siro độ nhớt cao, phải súc rửa ấm vòi tối thiểu 5 phút.
+  - Lắp đặt bổ sung điện trở sưởi dẻo quấn bảo ôn nhiệt độ đường ống dẫn siro cấp luôn duy trì ổn định ở 28-30 độ C.

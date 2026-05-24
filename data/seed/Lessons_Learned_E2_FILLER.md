@@ -1,18 +1,24 @@
 ---
 schema_version: 1
-tenant_id: "00000000-0000-0000-0000-000000000001"
+tenant_id: 00000000-0000-0000-0000-000000000001
 source: other
 origin:
-  filename: "Lessons_Learned_E2_FILLER.md"
-  uploaded_at: "2026-05-23T00:00:00Z"
-  uploaded_by: "11111111-1111-1111-1111-111111111111"
-  mime_type: "text/markdown"
-tags: [oee, plc, tia_portal, cpu_1214c, communication, lesson_learned]
+  filename: Lessons_Learned_E2_FILLER.md
+  uploaded_at: '2026-05-23T00:00:00Z'
+  uploaded_by: 11111111-1111-1111-1111-111111111111
+tags:
+- oee
+- plc
+- tia_portal
+- cpu_1214c
+- communication
+- lesson_learned
 doc_type: LESSON_LEARNED
 fault_code: E2
 machine_id: FILLER_02
-incident_date: "2026-05-20"
+incident_date: '2026-05-20'
 ---
+
 
 # Bài Học Kinh Nghiệm: Treo module điều khiển máy FILLER_02 (Lỗi E2)
 

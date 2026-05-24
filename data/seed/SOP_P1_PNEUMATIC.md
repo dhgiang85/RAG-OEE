@@ -1,0 +1,41 @@
+---
+schema_version: 1
+tenant_id: 00000000-0000-0000-0000-000000000001
+source: other
+origin:
+  filename: SOP_P1_PNEUMATIC.md
+  uploaded_at: '2026-05-23T12:10:00Z'
+  uploaded_by: 11111111-1111-1111-1111-111111111111
+tags:
+- oee
+- pneumatic
+- utility
+- pressure
+- sop
+doc_type: SOP
+fault_code: P1
+machine_id: PRESS_01
+category: UTILITY
+equipment_type: PNEUMATIC_SYSTEM
+severity: HIGH
+avg_downtime_min: 15.0
+last_updated: '2026-04-20'
+---
+
+
+# SOP Xử lý sự cố P1 - Áp suất khí nén cấp cho máy dập nắp PRESS_01 bị sụt áp
+
+## 1. Quy trình xử lý tiêu chuẩn (Standard Operations)
+Khi hệ thống PRESS_01 phát ra cảnh báo âm thanh và báo lỗi P1 (Áp suất khí nén dưới 5.5 bar), thực hiện ngay:
+1. Nhấn nút dừng máy tạm thời (Pause) trên HMI. **Không ngắt nguồn điện chính** để giữ trạng thái phanh hãm xi-lanh tránh rơi chày dập.
+2. Kiểm tra đồng hồ áp suất tại bộ lọc khí nén (FRL Unit) đầu vào máy.
+   - Nếu áp suất nguồn tổng dưới 5.5 bar: Gọi ngay nhân viên vận hành trạm khí nén trung tâm để kiểm tra máy nén khí chính.
+   - Nếu áp suất nguồn tổng bình thường (> 6.0 bar) nhưng đồng hồ máy sụt áp: Kiểm tra lõi lọc khí nén xem có bị tắc nghẽn bởi nước hoặc dầu máy dư thừa không.
+3. Kiểm tra các van điện từ Solenoid điều hướng khí nén dọc khung máy xem có tiếng rít xì hơi rò rỉ khí hay không.
+4. Xả van ngưng đọng nước ở đáy cốc lọc khí, reset áp suất lọc về mức chuẩn 6.0 bar và nhấn reset lỗi trên HMI.
+
+## 2. Tiêu chí leo thang (Escalation Path)
+* **Yêu cầu Bảo trì hỗ trợ gấp:** 
+  - Phát hiện vỡ đường ống dẫn khí mềm phi 12 chịu lực hoặc rách gioăng xi-lanh dập chính gây thoát khí ồ ạt.
+  - Áp suất khí nén tổng sụt sâu và kéo dài quá **10 phút** không khôi phục.
+  - Mọi sự cố sụt áp khí nén kéo dài quá **15 phút** phải báo cáo quản đốc ca để kích hoạt phương án chuyển đổi ca hoặc dừng dây chuyền đồng bộ.
